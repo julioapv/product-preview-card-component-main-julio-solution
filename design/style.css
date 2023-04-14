@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,700&family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
 
 /* font-family: 'Fraunces', serif;
 font-family: 'Montserrat', sans-serif; */
 
 :root {
-    --paragraph-font-size: 14px;
+    --paragraph-font-size: 16px;
     --primary-dark-cyan: hsl(158, 36%, 37%);
     --primary-cream: hsl(30, 38%, 92%);
     --neutral-very-dark-blue: hsl(212, 21%, 14%);
@@ -72,8 +72,61 @@ main {
 
 .card-head h2 {
     font-family: 'Fraunces', serif;
-    text-transform: inherit;
+    font-size: 35px;
+    color: var(--neutral-very-dark-blue);
+    margin-bottom: 10px;
 }
 
+.card-body p {
+    font-size: var(--paragraph-font-size);
+    color: var(--neutral-grayish-blue);
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.card-price {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.card-price h3 {
+    font-size: 2rem;
+    font-family: 'Fraunces', serif;
+    color: var(--primary-dark-cyan);
+    margin-right: 20px;
+}
+
+.card-price p {
+    font-size: var(--paragraph-font-size);
+    color: var(--neutral-grayish-blue);
+    margin-top: 10px;
+}
+
+
+.purchase-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--primary-dark-cyan);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--neutral-white);
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.purchase-button:hover {
+    background-color:hsl(156.32deg 42.22% 17.65%);
+}
+
+.purchase-button p {
+    margin-left: 10px;
+}
 
 
